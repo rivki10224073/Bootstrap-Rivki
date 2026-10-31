@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Learning Project – Versi Bootstrap Tanpa Div</title>
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <!-- Main Container -->
+  <main class="container py-4">
+
+    <!-- Header Utama -->
+    <header class="bg-primary text-white p-4 p-md-5 rounded-3 mb-4 text-center shadow-sm">
+      <h1 class="display-5 fw-bold">🌐 HTML Learning Project</h1>
+      <p class="lead mb-0">Master the Building Blocks of the Web</p>
+    </header>
+
+    <!-- Card 1: What is HTML? -->
+    <section class="card shadow-sm mb-4">
+      <header class="card-header bg-white pt-3 border-0 d-flex align-items-center">
+        <span class="fs-3 me-2">🚀</span>
+        <h2 class="card-title h3 mb-0">What is HTML?</h2>
+      </header>
+      <section class="card-body">
+        <h3 class="visually-hidden">Penjelasan What is HTML</h3>
+        <p class="card-text">
+          <strong>HTML (HyperText Markup Language)</strong> is the standard markup language for creating web pages. Think of it as the skeleton or foundation of every website you visit.
+        </p>
+
+        <section class="card mb-3 border-info">
+          <h4 class="card-header bg-info text-white fw-semibold h6 mb-0">Key Points:</h4>
+          <section class="card-body">
+            <h5 class="visually-hidden">Daftar Key Points</h5>
+            <ul class="mb-0">
+              <li><strong>HyperText:</strong> Text with links to other texts</li>
+              <li><strong>Markup:</strong> A way to annotate text to show structure and meaning</li>
+              <li><strong>Language:</strong> A set of rules and syntax for creating web content</li>
+            </ul>
+          </section>
+        </section>
+
+        <h3 class="h5 mt-4 mb-2">🏗️ How HTML Works</h3>
+        <p>HTML uses <strong>tags</strong> to define elements. Tags are keywords surrounded by angle brackets like <code>&lt;tagname&gt;</code>. Most tags come in pairs:</p>
+        <pre class="bg-dark text-light p-3 rounded"><code>&lt;tagname&gt;Content goes here&lt;/tagname&gt; &lt;h1&gt;This is a heading&lt;/h1&gt; &lt;p&gt;This is a paragraph&lt;/p&gt;</code></pre>
+      </section>
+    </section>
+
+    <!-- Card 2: Basic HTML Structure -->
+    <section class="card shadow-sm mb-4">
+      <header class="card-header bg-white pt-3 border-0 d-flex align-items-center">
+        <span class="fs-3 me-2">📋</span>
+        <h2 class="card-title h3 mb-0">Basic HTML Structure</h2>
+      </header>
+      <section class="card-body">
+        <h3 class="visually-hidden">Penjelasan Struktur Dasar HTML</h3>
+        <p class="card-text">Every HTML document follows this basic structure:</p>
+        <pre class="bg-dark text-light p-3 rounded"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is my first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <section class="card mb-3 border-secondary">
+          <h4 class="card-header bg-secondary text-white fw-semibold h6 mb-0">Structure Breakdown:</h4>
+          <section class="card-body">
+            <h5 class="visually-hidden">Daftar Structure Breakdown</h5>
+            <ul class="mb-0">
+              <li><code>&lt;!DOCTYPE html&gt;</code> - Tells the browser this is HTML5</li>
+              <li><code>&lt;html&gt;</code> - Root element of the page</li>
+              <li><code>&lt;head&gt;</code> - Contains metadata (not visible on page)</li>
+              <li><code>&lt;body&gt;</code> - Contains visible content</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-- Card 3: Essential HTML Tags -->
+    <section class="card shadow-sm mb-4">
+      <header class="card-header bg-white pt-3 border-0 d-flex align-items-center">
+        <span class="fs-3 me-2">🏷️</span>
+        <h2 class="card-title h3 mb-0">Essential HTML Tags</h2>
+      </header>
+      <section class="card-body">
+        <h3 class="visually-hidden">Tabel Tag Utama HTML</h3>
+        <figure class="table-responsive">
+          <table class="table table-striped table-hover table-bordered align-middle mb-0">
+            <thead class="table-primary">
+              <tr>
+                <th>Tag</th>
+                <th>Purpose</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>&lt;h1&gt; - &lt;h6&gt;</code></td>
+                <td>Headings (largest to smallest)</td>
+                <td><code>&lt;h1&gt;Main Title&lt;/h1&gt;</code></td>
+              </tr>
+              <tr>
+                <td><code>&lt;p&gt;</code></td>
+                <td>Paragraphs</td>
+                <td><code>&lt;p&gt;This is text&lt;/p&gt;</code></td>
+              </tr>
+              <tr>
+                <td><code>&lt;a&gt;</code></td>
+                <td>Links</td>
+                <td><code>&lt;a href="url"&gt;Link text&lt;/a&gt;</code></td>
+              </tr>
+              <tr>
+                <td><code>&lt;img&gt;</code></td>
+                <td>Images</td>
+                <td><code>&lt;img src="image.jpg" alt="Description"&gt;</code></td>
+              </tr>
+              <tr>
+                <td><code>&lt;div&gt;</code></td>
+                <td>Container/section</td>
+                <td><code>&lt;div&gt;Content here&lt;/div&gt;</code></td>
+              </tr>
+              <tr>
+                <td><code>&lt;ul&gt;, &lt;ol&gt;</code></td>
+                <td>Lists</td>
+                <td><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+
+        <h3 class="h5 mt-4 mb-3">🎯 Live Examples:</h3>
+        <section class="border rounded p-3 bg-white shadow-sm">
+          <h4 class="visually-hidden">Contoh Tampilan Elemen</h4>
+          <p class="h1">This is an H1 heading</p>
+          <p class="h2">This is an H2 heading</p>
+          <p class="h3">This is an H3 heading</p>
+          <p>This is a paragraph with <strong>bold text</strong> and <em>italic text</em>.</p>
+          <p>Here's a <a href="#" class="text-decoration-none">sample link</a>.</p>
+
+          <p class="mb-1"><strong>Unordered List:</strong></p>
+          <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+          </ul>
+
+          <p class="mb-1"><strong>Ordered List:</strong></p>
+          <ol class="mb-0">
+            <li>Step one</li>
+            <li>Step two</li>
+            <li>Step three</li>
+          </ol>
+        </section>
+      </section>
+    </section>
+
+    <!-- Card 4: HTML Forms -->
+    <section class="card shadow-sm mb-4">
+      <header class="card-header bg-white pt-3 border-0 d-flex align-items-center">
+        <span class="fs-3 me-2">📝</span>
+        <h2 class="card-title h3 mb-0">HTML Forms</h2>
+      </header>
+      <section class="card-body">
+        <h3 class="visually-hidden">Panduan Form HTML</h3>
+        <p class="card-text">Forms allow users to input data.</p>
+        <pre class="bg-dark text-light p-3 rounded"><code>&lt;form&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    
+    &lt;label for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+    
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+        <h3 class="h5 mt-4 mb-3">Example Form:</h3>
+        <form class="p-3 border rounded bg-white shadow-sm">
+          <p class="mb-3">
+            <label for="name" class="form-label fw-semibold">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan nama Anda">
+          </p>
+
+          <p class="mb-3">
+            <label for="email" class="form-label fw-semibold">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="nama@email.com">
+          </p>
+
+          <p class="mb-3">
+            <label for="subject" class="form-label fw-semibold">Subject:</label>
+            <select class="form-select" id="subject" name="subject">
+              <option value="question">Question</option>
+              <option value="feedback">Feedback</option>
+              <option value="support">Support</option>
+            </select>
+          </p>
+
+          <p class="mb-3">
+            <label for="message" class="form-label fw-semibold">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tulis pesan Anda..."></textarea>
+          </p>
+
+          <button type="submit" class="btn btn-primary px-4">Submit Form</button>
+        </form>
+      </section>
+    </section>
+
+    <!-- Card 5: HTML Attributes -->
+    <section class="card shadow-sm mb-4">
+      <header class="card-header bg-white pt-3 border-0 d-flex align-items-center">
+        <span class="fs-3 me-2">🎨</span>
+        <h2 class="card-title h3 mb-0">HTML Attributes</h2>
+      </header>
+      <section class="card-body">
+        <h3 class="visually-hidden">Penjelasan HTML Attributes</h3>
+        <p>Attributes provide additional information about HTML elements:</p>
+        <pre class="bg-dark text-light p-3 rounded"><code>&lt;!-- Common attributes --&gt;
+&lt;img src="photo.jpg" alt="A beautiful sunset" width="300" height="200"&gt;
+&lt;a href="https://example.com" target="_blank" title="Visit Example"&gt;Click here&lt;/a&gt;
+&lt;section class="container" id="main-content" style="color: blue;"&gt;Content&lt;/section&gt;</code></pre>
+
+        <section class="card mb-3 border-warning">
+          <h4 class="card-header bg-warning text-dark fw-semibold h6 mb-0">Important Attributes:</h4>
+          <section class="card-body">
+            <h5 class="visually-hidden">Daftar Atribut Penting</h5>
+            <ul class="mb-0">
+              <li><strong>id</strong> - Unique identifier for an element</li>
+              <li><strong>class</strong> - Groups elements for styling</li>
+              <li><strong>src</strong> - Source file for images, videos, etc.</li>
+              <li><strong>href</strong> - URL for links</li>
+              <li><strong>alt</strong> - Alternative text for images</li>
+              <li><strong>style</strong> - Inline CSS styling</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-- Card 6: Tables in HTML -->
+    <section class="card shadow-sm mb-4">
+      <header class="card-header bg-white pt-3 border-0 d-flex align-items-center">
+        <span class="fs-3 me-2">📊</span>
+        <h2 class="card-title h3 mb-0">Tables in HTML</h2>
+      </header>
+      <section class="card-body">
+        <h3 class="visually-hidden">Penjelasan Tabel HTML</h3>
+        <p>Tables organize data in rows and columns:</p>
+        <pre class="bg-dark text-light p-3 rounded"><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;th&gt;City&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+            &lt;td&gt;New York&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+        <h3 class="h5 mt-4 mb-3">Sample Table:</h3>
+        <figure class="table-responsive">
+          <table class="table table-striped table-hover table-bordered align-middle mb-0">
+            <thead class="table-success">
+              <tr>
+                <th>Student</th>
+                <th>Subject</th>
+                <th>Grade</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alice Johnson</td>
+                <td>Mathematics</td>
+                <td>A+</td>
+                <td><span class="badge bg-success">Passed</span></td>
+              </tr>
+              <tr>
+                <td>Bob Smith</td>
+                <td>Physics</td>
+                <td>B</td>
+                <td><span class="badge bg-success">Passed</span></td>
+              </tr>
+              <tr>
+                <td>Carol Davis</td>
+                <td>Chemistry</td>
+                <td>A</td>
+                <td><span class="badge bg-success">Passed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+      </section>
+    </section>
+
+    <!-- Card 7: Practice Exercises & Project Structure -->
+    <section class="card shadow-sm mb-4">
+      <header class="card-header bg-white pt-3 border-0 d-flex align-items-center">
+        <span class="fs-3 me-2">💻</span>
+        <h2 class="card-title h3 mb-0">Practice Exercises & Project Structure</h2>
+      </header>
+      <section class="card-body">
+        <h3 class="visually-hidden">Latihan & Struktur Proyek</h3>
+        <h3 class="h5 mb-2">Beginner Tasks:</h3>
+        <ol class="mb-4">
+          <li>Create a basic HTML page with a title, heading, and paragraph</li>
+          <li>Add an image with alt text</li>
+          <li>Create a list of your favorite movies</li>
+          <li>Build a simple table with your weekly schedule</li>
+        </ol>
+
+        <h3 class="h5 mb-2">Project Structure:</h3>
+        <pre class="bg-dark text-light p-3 rounded mb-0"><code>my-website/
+│
+├── index.html        (Main page)
+├── about.html        (About page)
+├── contact.html      (Contact page)
+│
+├── css/
+│   └── styles.css    (CSS stylesheets)
+│
+├── js/
+│   └── script.js     (JavaScript files)
+│
+└── images/
+    └── logo.png</code></pre>
+      </section>
+    </section>
+
+    <!-- Footer Utama -->
+    <footer class="bg-dark text-white p-4 rounded-3 text-center shadow-sm mb-4">
+      <h2 class="h5 mb-1">🎉 Congratulations!</h2>
+      <p class="mb-0 text-white-50">You've completed the HTML Learning Project! Keep practicing and building projects to strengthen your skills.</p>
+    </footer>
+
+  </main>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
